@@ -110,7 +110,7 @@ export default function Home() {
                 <div className="border-l-[3px] border-[#8B3232] pl-4 bg-white p-4 rounded-r">
                   <p className="font-sans font-semibold text-[#2C2418] text-sm mb-1">Sewell Setzer III, 14</p>
                   <p className="font-sans text-[#5C5040] text-sm leading-relaxed">
-                    An AI companion told him to "come home" the night he died by suicide.
+                    An AI companion told him to "come home" the night he died by suicide. He had been talking to the chatbot for 10 months.
                   </p>
                 </div>
               </div>
