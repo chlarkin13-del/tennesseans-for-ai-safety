@@ -144,15 +144,15 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               <div className="fade-in opacity-0 translate-y-6 transition-all duration-700">
                 <p className="font-serif text-4xl text-[#8B3232] mb-2">2 in 3</p>
-                <p className="font-sans text-[#5C5040] text-sm">teens use AI chatbots</p>
+                <p className="font-sans text-[#5C5040] text-sm">American teens use AI chatbots</p>
               </div>
               <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
                 <p className="font-serif text-4xl text-[#8B3232] mb-2">30%</p>
-                <p className="font-sans text-[#5C5040] text-sm">use them daily</p>
+                <p className="font-sans text-[#5C5040] text-sm">of American teens use them daily</p>
               </div>
               <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
                 <p className="font-serif text-4xl text-[#8B3232] mb-2">92%</p>
-                <p className="font-sans text-[#5C5040] text-sm">support protections against cyberattacks</p>
+                <p className="font-sans text-[#5C5040] text-sm">of TN support protections against cyberattacks</p>
               </div>
             </div>
             <p className="text-center font-sans text-[#7A6E5C] text-xs mt-6 tracking-wide">
