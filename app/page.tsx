@@ -120,7 +120,7 @@ export default function Home() {
             <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
               <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">The threats go beyond our kids</h2>
               <p className="font-sans text-[#5C5040] leading-relaxed mb-6">
-                The same AI systems that interact with our children could also be exploited by adversaries. These aren't hypothetical risks — they're happening now, and they're getting worse.
+                The same AI systems that interact with our children could also be exploited by our adversaries. These aren't hypothetical risks — they're happening now, and they're getting worse.
               </p>
               <div className="space-y-4">
                 <div className="border-l-[3px] border-[#C5963A] pl-4 bg-white p-4 rounded-r">
