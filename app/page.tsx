@@ -356,6 +356,9 @@ export default function Home() {
                 type="text"
                 name="zip_code"
                 placeholder="Zip code"
+                pattern="\d{5}"
+                maxLength={5}
+                inputMode="numeric"
                 required
                 className="w-full sm:w-32 bg-[#2C1F18] border border-[#4A3828] text-[#F0E6D8] placeholder-[#7A6E5C] px-4 py-3 rounded font-sans text-sm focus:outline-none focus:border-[#8B3232] transition-colors"
               />
