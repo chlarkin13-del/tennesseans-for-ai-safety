@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 // Fade-in on scroll hook
@@ -24,6 +24,32 @@ function useFadeIn() {
 
 export default function Home() {
   useFadeIn()
+
+  const [submitted, setSubmitted] = useState(false)
+
+  async function handleSignup(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    const form = e.currentTarget
+    const data = {
+      full_name: (form.elements.namedItem('full_name') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      zip_code: (form.elements.namedItem('zip_code') as HTMLInputElement).value,
+    }
+    try {
+      const res = await fetch('/api/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        alert('Something went wrong. Please try again.')
+      }
+    } catch {
+      alert('Something went wrong. Please try again.')
+    }
+  }
 
   return (
     <>
@@ -152,7 +178,7 @@ export default function Home() {
               </div>
               <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
                 <p className="font-serif text-4xl text-[#8B3232] mb-2">92%</p>
-                <p className="font-sans text-[#5C5040] text-sm">of TN support protections against cyberattacks</p>
+                <p className="font-sans text-[#5C5040] text-sm">of TNs support protections against cyberattacks</p>
               </div>
             </div>
             <p className="text-center font-sans text-[#7A6E5C] text-xs mt-6 tracking-wide">
@@ -299,33 +325,48 @@ export default function Home() {
             Stay informed. Make your voice heard.
           </h2>
 
-          {/* TODO: Wire this form to your email service (e.g. Mailchimp, ConvertKit, Resend, or a serverless action) */}
-          <form
-            action="#"
-            method="POST"
-            className="flex flex-col sm:flex-row gap-3 mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100"
-          >
-            <input
-              type="text"
-              name="first_name"
-              placeholder="First name"
-              required
-              className="flex-1 bg-[#2C1F18] border border-[#4A3828] text-[#F0E6D8] placeholder-[#7A6E5C] px-4 py-3 rounded font-sans text-sm focus:outline-none focus:border-[#8B3232] transition-colors"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              required
-              className="flex-1 bg-[#2C1F18] border border-[#4A3828] text-[#F0E6D8] placeholder-[#7A6E5C] px-4 py-3 rounded font-sans text-sm focus:outline-none focus:border-[#8B3232] transition-colors"
-            />
-            <button
-              type="submit"
-              className="font-sans text-sm font-semibold text-[#F5F0E8] bg-[#8B3232] px-6 py-3 rounded hover:bg-[#6e2828] transition-colors whitespace-nowrap"
+          {submitted ? (
+            <div className="mb-10 animate-fadeIn bg-[#2C1F18] border border-[#4A3828] rounded-xl px-8 py-10 text-center">
+              <p className="text-[#C5963A] text-2xl tracking-widest mb-4">★ ★ ★</p>
+              <p className="font-serif text-xl font-bold text-[#F0E6D8] mb-3">Thank you for joining us.</p>
+              <p className="font-sans text-[#A89882] leading-relaxed">
+                You're now part of the Tennesseans for AI Safety coalition. We'll keep you informed as this bill moves forward.
+              </p>
+            </div>
+          ) : (
+            <form
+              onSubmit={handleSignup}
+              className="flex flex-col sm:flex-row gap-3 mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100"
             >
-              Sign Up
-            </button>
-          </form>
+              <input
+                type="text"
+                name="full_name"
+                placeholder="First and last name"
+                required
+                className="flex-1 bg-[#2C1F18] border border-[#4A3828] text-[#F0E6D8] placeholder-[#7A6E5C] px-4 py-3 rounded font-sans text-sm focus:outline-none focus:border-[#8B3232] transition-colors"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+                className="flex-1 bg-[#2C1F18] border border-[#4A3828] text-[#F0E6D8] placeholder-[#7A6E5C] px-4 py-3 rounded font-sans text-sm focus:outline-none focus:border-[#8B3232] transition-colors"
+              />
+              <input
+                type="text"
+                name="zip_code"
+                placeholder="Zip code"
+                required
+                className="w-full sm:w-32 bg-[#2C1F18] border border-[#4A3828] text-[#F0E6D8] placeholder-[#7A6E5C] px-4 py-3 rounded font-sans text-sm focus:outline-none focus:border-[#8B3232] transition-colors"
+              />
+              <button
+                type="submit"
+                className="font-sans text-sm font-semibold text-[#F5F0E8] bg-[#8B3232] px-6 py-3 rounded hover:bg-[#6e2828] transition-colors whitespace-nowrap"
+              >
+                Sign Up
+              </button>
+            </form>
+          )}
         </div>
 
         <div className="max-w-5xl mx-auto border-t border-[#2C1F18] pt-8 text-center">

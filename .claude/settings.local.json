@@ -5,7 +5,10 @@
       "Bash(git init:*)",
       "Bash(git rm:*)",
       "Bash(gh repo:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git remote:*)",
+      "Bash(ssh:*)"
     ]
   }
 }
