@@ -64,7 +64,7 @@ export default function Home() {
             About the Bill
           </a>
           <a
-            href="#join-us"
+            href="#take-action"
             className="text-sm font-sans text-[#F0E6D8] border border-[#8B3232] px-4 py-1.5 rounded hover:bg-[#8B3232] transition-colors"
           >
             Take Action
@@ -309,7 +309,7 @@ export default function Home() {
       </section>
 
       {/* ── TAKE ACTION ── */}
-      <section className="bg-white border-t border-[#E0D8CC] px-6 pt-20 pb-12">
+      <section id="take-action" className="bg-white border-t border-[#E0D8CC] px-6 pt-20 pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <p className="section-label text-[#8B3232] mb-4">Take Action</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
