@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Script from 'next/script'
 
 // Fade-in on scroll hook
 function useFadeIn() {
@@ -307,6 +308,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── TAKE ACTION ── */}
+      <section className="bg-white border-t border-[#E0D8CC] px-6 pt-20 pb-12">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="section-label text-[#8B3232] mb-4">Take Action</p>
+          <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
+            Email your senator
+          </h2>
+          <p className="font-sans text-[#5C5040] mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
+            Send a message directly to your state senator urging them to support HB 1898 / SB 2171.
+          </p>
+          <div className="max-w-[600px] mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
+            <div data-paperform-id="pmhkl8yd" />
+          </div>
+        </div>
+      </section>
+      <Script src="https://paperform.co/__embed.min.js" strategy="lazyOnload" />
+
       {/* ── IMAGE BREAK 3 ── */}
       <div className="relative w-full h-72 md:h-96 overflow-hidden">
         <Image
@@ -320,6 +338,15 @@ export default function Home() {
       {/* ── FOOTER / SIGN UP ── */}
       <section id="join-us" className="bg-[#1C1410] px-6 pt-20 pb-12">
         <div className="max-w-2xl mx-auto text-center">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/logo.png"
+              alt="Tennesseans for AI Safety"
+              width={338}
+              height={338}
+              className="w-[338px] h-auto mix-blend-lighten"
+            />
+          </div>
           <p className="section-label text-[#C5963A] mb-4">Join Us</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Stay informed. Make your voice heard.
@@ -372,10 +399,42 @@ export default function Home() {
           )}
         </div>
 
+        <div className="max-w-5xl mx-auto border-t border-[#2C1F18] pt-10 pb-4 text-center">
+          <p className="section-label text-[#A89882] mb-6">Follow us to stay up to date</p>
+          <div className="flex justify-center gap-6">
+            {/* Instagram */}
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-[#A89882] hover:text-[#F0E6D8] transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            {/* Facebook */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-[#A89882] hover:text-[#F0E6D8] transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
         <div className="max-w-5xl mx-auto border-t border-[#2C1F18] pt-8 text-center">
           <p className="font-sans text-[#A89882] text-xs leading-relaxed">
             © 2026 Tennesseans for AI Safety – a nonpartisan coalition.<br />
-            Website paid for by Encode AI Corporation and the Secure AI Project.
+            Website paid for by Encode AI and the Secure AI Project.
           </p>
         </div>
       </section>
