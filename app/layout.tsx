@@ -15,11 +15,11 @@ const sourceSans = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  title: 'Tennesseans for AI Safety — Protect Children. Prevent Catastrophe. Promote Innovation.',
-  description: 'A nonpartisan coalition supporting Tennessee HB 1898 / SB 2171 — the Artificial Intelligence Public Safety and Child Protection Transparency Act.',
+  title: 'Tennesseans for AI Safety — Protect Children. Prevent Tragedy. Promote Innovation.',
+  description: 'A nonpartisan coalition supporting Tennessee HB 1898 / SB 2171 — common-sense child safety protections for AI chatbots.',
   openGraph: {
-    title: 'Tennesseans for AI Safety',
-    description: 'Supporting HB 1898 / SB 2171 — common-sense AI transparency for Tennessee families.',
+    title: 'Tennesseans for AI Safety — Protect Children. Prevent Tragedy. Promote Innovation.',
+    description: 'Tennessee families deserve to know that AI systems are built with real safeguards — for our children and our communities.',
     url: 'https://tennesseans-for-ai-safety.org',
     siteName: 'Tennesseans for AI Safety',
     locale: 'en_US',

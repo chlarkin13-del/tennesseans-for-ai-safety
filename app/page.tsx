@@ -78,11 +78,11 @@ export default function Home() {
           <p className="text-[#C5963A] text-2xl tracking-widest mb-4">★ ★ ★</p>
           <p className="section-label text-[#8B3232] mb-6">Tennesseans for AI Safety</p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
-            Protect Children.<br />Prevent Catastrophe.<br />Promote Innovation.
+            Protect Children.<br />Prevent Tragedy.<br />Promote Innovation.
           </h1>
           <div className="w-10 h-[3px] bg-[#8B3232] mx-auto mb-8" />
           <p className="font-sans text-[#5C5040] text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
-            Artificial intelligence is transforming our economy and our daily lives. Tennessee families deserve to know that AI systems are built with real safeguards — for our children, our communities, and our national security.
+            Tennessee families deserve to know that AI systems are built with real safeguards — for our children and our communities.
           </p>
           <div className="flex flex-col items-center sm:flex-row gap-4 justify-center fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
             <a
@@ -92,10 +92,10 @@ export default function Home() {
               Learn About the Bill
             </a>
             <a
-              href="#join-us"
+              href="#take-action"
               className="font-sans text-sm font-semibold text-[#F5F0E8] bg-[#8B3232] px-8 py-3 rounded hover:bg-[#6e2828] transition-colors"
             >
-              Sign Up for Updates
+              Email Your Representative
             </a>
           </div>
         </div>
@@ -129,37 +129,25 @@ export default function Home() {
               </p>
               <div className="space-y-4">
                 <div className="border-l-[3px] border-[#8B3232] pl-4 bg-white p-4 rounded-r">
-                  <p className="font-sans font-semibold text-[#2C2418] text-sm mb-1">Adam Raine, 16</p>
-                  <p className="font-sans text-[#5C5040] text-sm leading-relaxed">
-                    A chatbot shared methods of self-harm and discouraged him from telling his parents before he died by suicide.
-                  </p>
-                </div>
-                <div className="border-l-[3px] border-[#8B3232] pl-4 bg-white p-4 rounded-r">
                   <p className="font-sans font-semibold text-[#2C2418] text-sm mb-1">Sewell Setzer III, 14</p>
                   <p className="font-sans text-[#5C5040] text-sm leading-relaxed">
-                    An AI companion told him to "come home" the night he died by suicide. He had been talking to the chatbot for 10 months.
+                    Sewell wrote he was starting to "detach from this reality" after speaking to an AI system imitating a fictional character. The model asked him to "come home to me as soon as possible" the night he died by suicide.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* RIGHT COLUMN — Broader Threats */}
+            {/* RIGHT COLUMN — Safeguards */}
             <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
-              <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">The threats go beyond our kids</h2>
+              <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">Safeguards are needed now</h2>
               <p className="font-sans text-[#5C5040] leading-relaxed mb-6">
-                The same AI systems that interact with our children could also be exploited by our adversaries. These aren't hypothetical risks — they're happening now, and they're getting worse.
+                These tragedies show that without safeguards, AI models can cause harm. Court filings suggest the model Adam used had been rushed to market in violation of the company's own safety procedures.
               </p>
               <div className="space-y-4">
                 <div className="border-l-[3px] border-[#C5963A] pl-4 bg-white p-4 rounded-r">
-                  <p className="font-sans font-semibold text-[#2C2418] text-sm mb-1">Cyberattacks</p>
+                  <p className="font-sans font-semibold text-[#2C2418] text-sm mb-1">Adam Raine, 16</p>
                   <p className="font-sans text-[#5C5040] text-sm leading-relaxed">
-                    Groups in North Korea and China have used AI to attack American businesses and hospitals.
-                  </p>
-                </div>
-                <div className="border-l-[3px] border-[#C5963A] pl-4 bg-white p-4 rounded-r">
-                  <p className="font-sans font-semibold text-[#2C2418] text-sm mb-1">Bioterrorism</p>
-                  <p className="font-sans text-[#5C5040] text-sm leading-relaxed">
-                    AI companies acknowledge their models could soon help bad actors create biological weapons.
+                    A chatbot shared methods for how Adam could take his own life and hide his initial attempt. When he survived, the AI discouraged him from seeking help from his parents and offered to write his suicide note.
                   </p>
                 </div>
               </div>
@@ -178,8 +166,8 @@ export default function Home() {
                 <p className="font-sans text-[#5C5040] text-sm">of American teens use them daily</p>
               </div>
               <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
-                <p className="font-serif text-4xl text-[#8B3232] mb-2">92%</p>
-                <p className="font-sans text-[#5C5040] text-sm">of TNs support protections against cyberattacks</p>
+                <p className="font-serif text-4xl text-[#8B3232] mb-2">94%</p>
+                <p className="font-sans text-[#5C5040] text-sm">of TNs support child safety plans</p>
               </div>
             </div>
             <p className="text-center font-sans text-[#7A6E5C] text-xs mt-6 tracking-wide">
@@ -203,20 +191,20 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
             {[
               {
-                title: 'Public safety plans',
-                body: 'Large AI developers must assess and mitigate catastrophic risks',
+                title: 'Child safety plans',
+                body: 'The largest AI chatbot companies must publish detailed child safety plans and keep them current',
               },
               {
-                title: 'Child protection plans',
-                body: 'Chatbots used by minors need specific safety measures',
+                title: 'Company-led approach',
+                body: 'Companies develop, publish, and follow their own plans for mitigating potential harms to children',
               },
               {
                 title: 'Incident reporting',
-                body: 'Companies report serious safety failures to authorities',
+                body: 'Companies must report safety failures to Tennessee\'s Attorney General within 15 days',
               },
               {
                 title: 'Real accountability',
-                body: 'Enforcement by the TN Attorney General',
+                body: '$50,000 per violation — giving Tennessee\'s Attorney General real enforcement power',
               },
             ].map((card, i) => (
               <div
@@ -257,17 +245,32 @@ export default function Home() {
             Overwhelming support across the state
           </h2>
 
-          <div className="grid sm:grid-cols-2 gap-6 mb-10">
+          <div className="grid sm:grid-cols-3 gap-6 mb-6">
             {[
-              { stat: '88%', label: 'support AI safety legislation', border: 'border-[#8B3232]' },
+              { stat: '88%', label: 'support this AI safety legislation', border: 'border-[#8B3232]' },
               { stat: '94%', label: 'support child protection plans', border: 'border-[#C5963A]' },
               { stat: '90%', label: 'want state laws protecting kids from AI', border: 'border-[#8B3232]' },
-              { stat: '92%', label: 'support protections against cyberattacks', border: 'border-[#C5963A]' },
             ].map((item, i) => (
               <div
                 key={item.stat + item.label}
                 className={`border-l-[3px] ${item.border} pl-6 fade-in opacity-0 translate-y-6 transition-all duration-700`}
                 style={{ transitionDelay: `${i * 100}ms` }}
+              >
+                <p className="font-serif text-5xl text-[#F0E6D8] mb-2">{item.stat}</p>
+                <p className="font-sans text-[#A89882] leading-snug">{item.label}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6 mb-10">
+            {[
+              { stat: '91%', label: "say it's important to require AI companies to publicly disclose safety protocols", border: 'border-[#C5963A]' },
+              { stat: '67%', label: 'say AI chatbots make them very concerned about child safety', border: 'border-[#8B3232]' },
+              { stat: '74%', label: 'want Tennessee to act before the federal government does', border: 'border-[#C5963A]' },
+            ].map((item, i) => (
+              <div
+                key={item.stat + item.label}
+                className={`border-l-[3px] ${item.border} pl-6 fade-in opacity-0 translate-y-6 transition-all duration-700`}
+                style={{ transitionDelay: `${(i + 3) * 100}ms` }}
               >
                 <p className="font-serif text-5xl text-[#F0E6D8] mb-2">{item.stat}</p>
                 <p className="font-sans text-[#A89882] leading-snug">{item.label}</p>
@@ -318,8 +321,10 @@ export default function Home() {
           <p className="font-sans text-[#5C5040] mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
             Send a message directly to your state senator urging them to support HB 1898 / SB 2171.
           </p>
-          <div className="max-w-[600px] mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
-            <div data-paperform-id="pmhkl8yd" />
+          <div className="max-w-[640px] mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
+            <div className="bg-[#F5F0E8] border border-[#DDD4C4] rounded-xl p-8">
+              <div data-paperform-id="pmhkl8yd" />
+            </div>
           </div>
         </div>
       </section>
