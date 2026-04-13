@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
-import Script from 'next/script'
+
 
 // Fade-in on scroll hook
 function useFadeIn() {
@@ -25,6 +25,21 @@ function useFadeIn() {
 
 export default function Home() {
   useFadeIn()
+
+  const voterVoiceRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const container = voterVoiceRef.current
+    if (!container) return
+    // Guard against double-injection (React StrictMode)
+    if (container.querySelector('script')) return
+    const script = document.createElement('script')
+    script.src = 'https://www.votervoice.net/Scripts/ZxYAAAAAAAA/Plugin.js?app=campaigns&id=136430&hideAlert=true'
+    script.async = true
+    container.appendChild(script)
+    return () => {
+      if (container.contains(script)) container.removeChild(script)
+    }
+  }, [])
 
   const [submitted, setSubmitted] = useState(false)
 
@@ -322,13 +337,10 @@ export default function Home() {
             Send a message directly to your state senator urging them to support HB 1898 / SB 2171.
           </p>
           <div className="max-w-[640px] mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
-            <div className="bg-[#F5F0E8] border border-[#DDD4C4] rounded-xl p-8">
-              <div data-paperform-id="pmhkl8yd" />
-            </div>
+            <div ref={voterVoiceRef} className="bg-[#F5F0E8] border border-[#DDD4C4] rounded-xl p-6" />
           </div>
         </div>
       </section>
-      <Script src="https://paperform.co/__embed.min.js" strategy="lazyOnload" />
 
       {/* ── IMAGE BREAK 3 ── */}
       <div className="relative w-full h-72 md:h-96 overflow-hidden">
