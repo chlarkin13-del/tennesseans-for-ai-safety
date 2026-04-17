@@ -31,12 +31,10 @@ export default function HomeContent() {
       <Nav />
 
       {/* ── HERO ── */}
-      <section className="bg-[#F5F0E8] px-6 pt-16 pb-16 text-center">
+      <section className="bg-[#F5F0E8] px-6 pt-20 pb-16 text-center">
         <div className="max-w-3xl mx-auto">
-          <div className="flex justify-center mb-6">
-            <Image src="/logo.png" alt="Tennesseans for AI Safety" width={338} height={338} className="w-[280px] sm:w-[338px] h-auto mix-blend-multiply" priority />
-          </div>
-          <p className="text-[#C5963A] text-2xl tracking-widest mb-6">★ ★ ★</p>
+          <p className="text-[#C5963A] text-2xl tracking-widest mb-4">★ ★ ★</p>
+          <p className="section-label text-[#8B3232] mb-6">Tennesseans for AI Safety</p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
             AI is changing Tennessee.<br />We&apos;re making sure it&apos;s safe.
           </h1>
@@ -139,7 +137,7 @@ export default function HomeContent() {
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <p className="font-serif text-[#F0E6D8] leading-relaxed mb-4 text-sm md:text-base">
-                  &ldquo;{card.quote}&rdquo;
+                  {card.quote}
                 </p>
                 <p className="font-sans text-[#C5963A] text-xs tracking-wide">
                   {card.source}
@@ -184,6 +182,11 @@ export default function HomeContent() {
           </div>
         </div>
       </section>
+
+      {/* ── IMAGE BAND ── */}
+      <div className="relative w-full h-72 md:h-96 overflow-hidden">
+        <Image src="/tennessee-community.jpg" alt="Tennessee families and community" fill className="object-cover object-center" />
+      </div>
 
       {/* ── WHAT TENNESSEANS THINK ── */}
       <section className="bg-[#F5F0E8] px-6 pt-20 pb-12">
@@ -237,11 +240,6 @@ export default function HomeContent() {
           </p>
         </div>
       </section>
-
-      {/* ── IMAGE BAND ── */}
-      <div className="relative w-full h-72 md:h-96 overflow-hidden">
-        <Image src="/tennessee-community.jpg" alt="Tennessee families and community" fill className="object-cover object-center" />
-      </div>
 
       <Footer headline="Stay informed. Make your voice heard." />
     </>

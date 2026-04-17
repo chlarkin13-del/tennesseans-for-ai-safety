@@ -35,7 +35,7 @@ export default function Footer({ headline, subtext }: FooterProps) {
   }
 
   return (
-    <section id="join-us" className="bg-[#1C1410] px-6 pt-20 pb-12">
+    <section id="join-us" className="bg-[#1C1410] px-6 pt-7 pb-12">
       <div className="max-w-2xl mx-auto text-center">
         <div className="flex justify-center mb-6">
           <Image
