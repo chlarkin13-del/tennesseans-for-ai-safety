@@ -32,7 +32,7 @@ export default function HomeContent() {
 
       {/* ── HERO ── */}
       <section className="bg-[#F5F0E8] px-6 pt-20 pb-16 text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="text-[#C5963A] text-2xl tracking-widest mb-4">★ ★ ★</p>
           <p className="section-label text-[#8B3232] mb-6">Tennesseans for AI Safety</p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
@@ -62,7 +62,7 @@ export default function HomeContent() {
 
       {/* ── WHY AI SAFETY MATTERS ── */}
       <section id="about" className="bg-[#F5F0E8] px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">Why AI Safety Matters</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
             The risks are real — and they&apos;re growing fast.
@@ -86,7 +86,7 @@ export default function HomeContent() {
             <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
               <p className="section-label text-[#C5963A] mb-3">Cybersecurity</p>
               <p className="font-sans text-[#5C5040] leading-relaxed mb-4">
-                Frontier AI models can find and exploit software vulnerabilities with unprecedented accuracy — in critical infrastructure, hospitals, and financial systems.
+                Frontier AI models can find and exploit software vulnerabilities with scary accuracy — in critical infrastructure, hospitals, and financial systems.
               </p>
               <div className="border-l-[3px] border-[#C5963A] pl-4 bg-white p-4 rounded-r">
                 <p className="font-sans text-[#5C5040] text-sm leading-relaxed">
@@ -113,7 +113,7 @@ export default function HomeContent() {
 
       {/* ── WHAT THE AI COMPANIES ARE TELLING US ── */}
       <section className="bg-[#1C1410] px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#C5963A] text-center mb-4">What the AI Companies Are Telling Us</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] text-center mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">
             In their own words
@@ -154,7 +154,7 @@ export default function HomeContent() {
 
       {/* ── WHAT WE'RE FIGHTING FOR ── */}
       <section className="bg-white px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">What We&apos;re Fighting For</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] text-center mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Common-sense AI safeguards for Tennessee
@@ -190,7 +190,7 @@ export default function HomeContent() {
 
       {/* ── WHAT TENNESSEANS THINK ── */}
       <section className="bg-[#F5F0E8] px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">What Tennesseans Think</p>
           <div className="grid sm:grid-cols-3 gap-6 mb-8">
             {[
@@ -216,7 +216,7 @@ export default function HomeContent() {
 
       {/* ── LEGISLATION ── */}
       <section className="bg-[#1C1410] px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#C5963A] text-center mb-4">Legislation</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Our work in the Tennessee General Assembly

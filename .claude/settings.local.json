@@ -9,7 +9,9 @@
       "Bash(git add:*)",
       "Bash(git remote:*)",
       "Bash(ssh:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)"
     ]
   }
 }

@@ -79,7 +79,7 @@ export default function Footer({ headline, subtext }: FooterProps) {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto border-t border-[#2C1F18] pt-10 pb-4 text-center">
+      <div className="max-w-3xl mx-auto border-t border-[#2C1F18] pt-10 pb-4 text-center">
         <p className="section-label text-[#A89882] mb-6">Follow us to stay up to date</p>
         <div className="flex justify-center gap-6">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[#A89882] hover:text-[#F0E6D8] transition-colors">
@@ -95,7 +95,7 @@ export default function Footer({ headline, subtext }: FooterProps) {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto border-t border-[#2C1F18] pt-8 text-center">
+      <div className="max-w-3xl mx-auto border-t border-[#2C1F18] pt-8 text-center">
         <p className="font-sans text-[#A89882] text-xs leading-relaxed">
           © 2026 Tennesseans for AI Safety · A nonpartisan coalition.<br />
           Website maintained by Encode AI and the Secure AI Project.

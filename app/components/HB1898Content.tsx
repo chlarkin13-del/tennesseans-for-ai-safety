@@ -40,7 +40,7 @@ export default function HB1898Content() {
 
       {/* ── BREADCRUMB ── */}
       <div className="bg-[#F5F0E8] px-6 py-4 border-b border-[#E0D8CC]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <Link href="/" className="font-sans text-sm text-[#5C5040] hover:text-[#2C2418] transition-colors">
             <span className="text-[#8B3232] mr-1">←</span> Back to home
           </Link>
@@ -71,13 +71,13 @@ export default function HB1898Content() {
 
       {/* ── WHERE THE BILL STANDS ── */}
       <section className="bg-white px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#8B3232] mb-4">Where the Bill Stands</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] mb-8 fade-in opacity-0 translate-y-6 transition-all duration-700">
             We came close — but not this year
           </h2>
 
-          <div className="max-w-3xl space-y-4 mb-12">
+          <div className="space-y-4 mb-12">
             <p className="font-sans text-[#5C5040] leading-relaxed fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
               HB 1898 / SB 2171 went up for five substantive votes across the Tennessee General Assembly. It passed four of them unanimously — including a historic <strong className="text-[#2C2418]">94–0 vote on the House floor</strong>.
             </p>
@@ -128,7 +128,7 @@ export default function HB1898Content() {
 
       {/* ── WHY THIS MATTERS ── */}
       <section className="bg-[#F5F0E8] px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-12">Why This Matters</p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -148,7 +148,7 @@ export default function HB1898Content() {
             </div>
 
             <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
-              <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">Safeguards are needed now</h2>
+              <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">Safeguards are needed</h2>
               <p className="font-sans text-[#5C5040] leading-relaxed mb-6">
                 These tragedies show that without safeguards, AI models can cause harm. Court filings suggest the model Adam used had been rushed to market in violation of the company&apos;s own safety procedures.
               </p>
@@ -187,7 +187,7 @@ export default function HB1898Content() {
 
       {/* ── WHAT THE BILL WOULD HAVE DONE ── */}
       <section className="bg-white px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">What the Bill Would Have Done</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] text-center mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Common-sense transparency, not a ban on AI
@@ -222,7 +222,7 @@ export default function HB1898Content() {
 
       {/* ── WHAT TENNESSEANS THINK ── */}
       <section className="bg-[#1C1410] px-6 pt-20 pb-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#C5963A] text-center mb-4">What Tennesseans Think</p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Overwhelming support across the state
@@ -244,7 +244,7 @@ export default function HB1898Content() {
               </div>
             ))}
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 mb-10 sm:max-w-2xl sm:mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6 mb-10">
             {[
               { stat: '67%', label: 'say AI chatbots make them very concerned about child safety', border: 'border-[#C5963A]' },
               { stat: '74%', label: 'want Tennessee to act before the federal government does', border: 'border-[#8B3232]' },
@@ -268,7 +268,7 @@ export default function HB1898Content() {
 
       {/* ── FROM THE SPONSORS ── */}
       <section className="bg-[#F5F0E8] px-6 pt-20 pb-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-12">From the Sponsors</p>
 
           <div className="space-y-10">
@@ -303,7 +303,7 @@ export default function HB1898Content() {
           <p className="font-sans text-[#5C5040] mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
             Let your legislators know you&apos;ll remember their position. Send a message thanking supporters or urging others to stand with Tennessee families next session.
           </p>
-          <div className="max-w-5xl mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
+          <div className="max-w-3xl mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
             <div className="bg-[#F5F0E8] border border-[#DDD4C4] rounded-xl p-6">
               <iframe
                 src="/votervoice.html"
