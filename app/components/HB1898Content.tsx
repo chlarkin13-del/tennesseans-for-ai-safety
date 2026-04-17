@@ -55,7 +55,7 @@ export default function HB1898Content() {
             <span className="font-sans text-[#7A6E5C] text-xs">114th General Assembly · 2025–2026</span>
           </div>
           <p className="section-label text-[#8B3232] mb-3">HB 1898 / SB 2171</p>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
             The Artificial Intelligence Public Safety and Child Protection Transparency Act
           </h1>
           <p className="font-sans text-[#5C5040] text-lg leading-relaxed mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
@@ -73,7 +73,7 @@ export default function HB1898Content() {
       <section className="bg-white px-6 pt-20 pb-12">
         <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#8B3232] mb-4">Where the Bill Stands</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] mb-8 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-8 fade-in opacity-0 translate-y-6 transition-all duration-700">
             We came close — but not this year
           </h2>
 
@@ -133,7 +133,7 @@ export default function HB1898Content() {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="fade-in opacity-0 translate-y-6 transition-all duration-700">
-              <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">Our children are at risk</h2>
+              <h2 className="font-serif text-xl md:text-2xl text-[#2C2418] mb-4">Our children are at risk</h2>
               <p className="font-sans text-[#5C5040] leading-relaxed mb-6">
                 AI chatbots have already contributed to the deaths of American children. Without safeguards, these systems can encourage self-harm, isolate kids from their parents, and exploit young users.
               </p>
@@ -148,7 +148,7 @@ export default function HB1898Content() {
             </div>
 
             <div className="fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
-              <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] mb-4">Safeguards are needed</h2>
+              <h2 className="font-serif text-xl md:text-2xl text-[#2C2418] mb-4">Safeguards are needed</h2>
               <p className="font-sans text-[#5C5040] leading-relaxed mb-6">
                 These tragedies show that without safeguards, AI models can cause harm. Court filings suggest the model Adam used had been rushed to market in violation of the company&apos;s own safety procedures.
               </p>
@@ -189,7 +189,7 @@ export default function HB1898Content() {
       <section className="bg-white px-6 pt-20 pb-12">
         <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">What the Bill Would Have Done</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] text-center mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] text-center mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Common-sense transparency, not a ban on AI
           </h2>
           <p className="font-sans text-[#7A6E5C] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
@@ -224,38 +224,25 @@ export default function HB1898Content() {
       <section className="bg-[#1C1410] px-6 pt-20 pb-12">
         <div className="max-w-3xl mx-auto">
           <p className="section-label text-[#C5963A] text-center mb-4">What Tennesseans Think</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#F0E6D8] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Overwhelming support across the state
           </h2>
 
-          <div className="grid sm:grid-cols-3 gap-6 mb-6">
+          <div className="grid sm:grid-cols-3 gap-6 mb-10">
             {[
               { stat: '88%', label: 'support this AI safety legislation', border: 'border-[#8B3232]' },
               { stat: '94%', label: 'support child protection plans', border: 'border-[#C5963A]' },
               { stat: '90%', label: 'want state laws protecting kids from AI', border: 'border-[#8B3232]' },
-            ].map((item, i) => (
-              <div
-                key={item.stat + item.label}
-                className={`border-l-[3px] ${item.border} pl-6 fade-in opacity-0 translate-y-6 transition-all duration-700`}
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <p className="font-serif text-5xl text-[#F0E6D8] mb-2">{item.stat}</p>
-                <p className="font-sans text-[#A89882] leading-snug">{item.label}</p>
-              </div>
-            ))}
-          </div>
-          <div className="grid sm:grid-cols-2 gap-6 mb-10">
-            {[
               { stat: '67%', label: 'say AI chatbots make them very concerned about child safety', border: 'border-[#C5963A]' },
               { stat: '74%', label: 'want Tennessee to act before the federal government does', border: 'border-[#8B3232]' },
             ].map((item, i) => (
               <div
                 key={item.stat + item.label}
                 className={`border-l-[3px] ${item.border} pl-6 fade-in opacity-0 translate-y-6 transition-all duration-700`}
-                style={{ transitionDelay: `${(i + 3) * 100}ms` }}
+                style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <p className="font-serif text-5xl text-[#F0E6D8] mb-2">{item.stat}</p>
-                <p className="font-sans text-[#A89882] leading-snug">{item.label}</p>
+                <p className="font-serif text-4xl text-[#F0E6D8] mb-2">{item.stat}</p>
+                <p className="font-sans text-sm text-[#A89882] leading-snug">{item.label}</p>
               </div>
             ))}
           </div>
@@ -297,7 +284,7 @@ export default function HB1898Content() {
       <section id="take-action" className="bg-white border-t border-[#E0D8CC] px-6 pt-20 pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <p className="section-label text-[#8B3232] mb-4">Take Action</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-xl md:text-2xl text-[#2C2418] mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
             The session ended — but the work continues
           </h2>
           <p className="font-sans text-[#5C5040] mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">

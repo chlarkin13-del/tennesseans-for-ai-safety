@@ -47,7 +47,7 @@ export default function Footer({ headline, subtext }: FooterProps) {
           />
         </div>
         <p className="section-label text-[#C5963A] mb-4">Join the Coalition</p>
-        <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] mb-4">
+        <h2 className="font-serif text-2xl md:text-3xl text-[#F0E6D8] mb-4">
           {headline}
         </h2>
         {subtext && (

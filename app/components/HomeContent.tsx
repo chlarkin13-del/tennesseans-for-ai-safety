@@ -35,7 +35,7 @@ export default function HomeContent() {
         <div className="max-w-4xl mx-auto">
           <p className="text-[#C5963A] text-2xl tracking-widest mb-4">★ ★ ★</p>
           <p className="section-label text-[#8B3232] mb-6">Tennesseans for AI Safety</p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h1 className="font-serif text-2xl md:text-3xl lg:text-5xl text-[#2C2418] leading-tight mb-6 fade-in opacity-0 translate-y-6 transition-all duration-700">
             AI is changing Tennessee.<br />We&apos;re making sure it&apos;s safe.
           </h1>
           <div className="w-10 h-[3px] bg-[#8B3232] mx-auto mb-8" />
@@ -64,7 +64,7 @@ export default function HomeContent() {
       <section id="about" className="bg-[#F5F0E8] px-6 pt-20 pb-12">
         <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">Why AI Safety Matters</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
             The risks are real — and they&apos;re growing fast.
           </h2>
 
@@ -115,7 +115,7 @@ export default function HomeContent() {
       <section className="bg-[#1C1410] px-6 pt-20 pb-12">
         <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#C5963A] text-center mb-4">What the AI Companies Are Telling Us</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] text-center mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#F0E6D8] text-center mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">
             In their own words
           </h2>
           <p className="font-sans text-[#A89882] text-center mb-12 max-w-2xl mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
@@ -156,7 +156,7 @@ export default function HomeContent() {
       <section className="bg-white px-6 pt-20 pb-12">
         <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#8B3232] text-center mb-4">What We&apos;re Fighting For</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#2C2418] text-center mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#2C2418] text-center mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Common-sense AI safeguards for Tennessee
           </h2>
           <p className="font-sans text-[#5C5040] text-center mb-12 max-w-2xl mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
@@ -218,7 +218,7 @@ export default function HomeContent() {
       <section className="bg-[#1C1410] px-6 pt-20 pb-12">
         <div className="max-w-4xl mx-auto">
           <p className="section-label text-[#C5963A] text-center mb-4">Legislation</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#F0E6D8] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#F0E6D8] text-center mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">
             Our work in the Tennessee General Assembly
           </h2>
 
