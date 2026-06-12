@@ -280,29 +280,6 @@ export default function HB1898Content() {
         </div>
       </section>
 
-      {/* ── TAKE ACTION ── */}
-      <section id="take-action" className="bg-white border-t border-[#E0D8CC] px-6 pt-20 pb-12">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="section-label text-[#8B3232] mb-4">Take Action</p>
-          <h2 className="font-serif text-xl md:text-2xl text-[#2C2418] mb-4 fade-in opacity-0 translate-y-6 transition-all duration-700">
-            The session ended — but the work continues
-          </h2>
-          <p className="font-sans text-[#5C5040] mb-10 fade-in opacity-0 translate-y-6 transition-all duration-700 delay-100">
-            Let your legislators know you&apos;ll remember their position. Send a message thanking supporters or urging others to stand with Tennessee families next session.
-          </p>
-          <div className="max-w-3xl mx-auto fade-in opacity-0 translate-y-6 transition-all duration-700 delay-200">
-            <div className="bg-[#F5F0E8] border border-[#DDD4C4] rounded-xl p-6">
-              <iframe
-                src="/votervoice.html"
-                width="100%"
-                style={{ border: 'none', minHeight: '950px' }}
-                title="Email your senator"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── IMAGE BREAK ── */}
       <div className="relative w-full h-72 md:h-96 overflow-hidden">
         <Image src="/tennessee-landscape.jpg" alt="Tennessee farmland" fill className="object-cover object-center" />
